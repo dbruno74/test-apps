@@ -18,6 +18,9 @@ apps:
     daemon: simple
     after:
       - oneshotdaemon
+  oneshotdaemon:
+    command: oneshotdaemon.sh
+    daemon: oneshot
 
 parts:
   test-apps:
