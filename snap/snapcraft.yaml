@@ -16,6 +16,8 @@ apps:
   adaemon:
     command: adaemon.sh
     daemon: simple
+    after:
+      - oneshotdaemon
 
 parts:
   test-apps:
